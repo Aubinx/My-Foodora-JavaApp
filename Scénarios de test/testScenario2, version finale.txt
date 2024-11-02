@@ -1,0 +1,55 @@
+setup 25 50 15
+login ceo 123
+showProfile
+setDeliveryPolicy fair-occupation
+showOrders 
+showMenuItem Restaurant7
+totalIncome
+lastMonthIncome
+showTotalProfit
+showTotalProfit 2024-04-02 2024-06-10
+setServiceFee 3.5
+setProfitPolicy deliverycost
+associateCard cust35 point
+logout 
+login cust35 custpass35
+showProfile 
+notifOn 
+histoOrders 
+logout 
+login rest17 restpass17 
+showMenu
+showMeal meal_2
+showMeal meal_1
+defaultFactorDiscount 0.07
+specialFactorDiscount 0.2
+showMeal meal_1
+setSpecialOffer meal_2
+showMeal meal_2
+logout
+login rest23 restpass23
+showProfile
+setSpecialOffer meal_3
+logout
+login courier3 courpass3
+showProfile
+showNotifs
+logout 
+login cust35 custpass35
+showNotifs
+createOrder Restaurant17 ord
+addItem2Order ord meal_2
+endOrder ord 2024-06-20
+logout 
+login ceo 123
+showRestaurantTop 
+showCourierDeliveries
+logout 
+login rest17 restpass17
+findDeliverer ord 
+logout 
+
+
+
+
+

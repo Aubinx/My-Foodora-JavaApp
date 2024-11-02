@@ -1,0 +1,53 @@
+setup 100 100 100
+login ceo 123
+registerRestaurant mcdo 4,9 mcdo 123
+registerCustomer francois petit fp 3,2 123
+registerCourier Walid Ben wb 89,45 123
+logout
+login mcdo 123
+createMeal mcfirst Standard
+createMeal mcsmart vegetarian
+addDishRestaurantMenu frites starter standard 5.0
+addDishRestaurantMenu burger main vegetarian 10.0
+addDishRestaurantMenu ice dessert standard 3.5
+addDish2Meal frites mcfirst
+addDish2Meal ice mcfirst 
+addDish2Meal burger mcsmart 
+saveMeal mcsmart
+saveMeal mcfirst
+showMeal mcfirst 
+showMeal mcsmart 
+specialFactorDiscount 0.20
+defaultFactorDiscount 0.02
+setSpecialOffer mcfirst
+specialFactorDiscount 0.123
+setSpecialOffer mcsmart
+showMeal mcfirst
+showMeal mcsmart
+removeFromSpecialOffer mcfirst
+showMeal mcfirst
+logout
+login fp 123
+notifOn 
+createOrder mcdo ord  
+addItem2Order ord mcfirst
+addItem2Order ord ice
+showOrder ord
+endOrder ord 2024-06-20
+logout
+login ceo 123
+setDeliveryPolicy fastest
+showRestaurantTop
+logout
+login wb 123
+offDuty wb
+logout
+login mcdo 123
+findDeliverer ord
+logout
+login ceo 123
+showCustomers
+associateCard fp point
+showMenuItem mcdo
+showCourierDeliveries
+showTotalProfit

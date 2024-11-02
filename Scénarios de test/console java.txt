@@ -1,0 +1,19 @@
+login ceo 123456789
+registerRestaurant McDo 4,5 mcdo super
+registerCustomer Aubin Ollivier aubinx 1,1 123
+logout
+login mcdo super
+createMeal McFirst standard
+addDishRestaurantMenu frites starter standard 4
+addDishRestaurantMenu burger main standard 5
+addDish2Meal burger McFirst
+addDish2Meal frites McFirst
+createMeal McSmart gluten-free
+addDishRestaurantMenu frites-sans-gluten starter gluten-free 4
+addDish2Meal frites-sans-gluten McSmart
+logout
+login aubinx 123
+createOrder McDo ord
+addItem2Order ord McFirst
+addItem2Order ord frites-sans-gluten
+showOrder ord

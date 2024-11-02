@@ -1,0 +1,69 @@
+setup 0 0 0
+login ceo 123
+registerRestaurant Tour_d'Argent 1,2 tourdargent rourteau
+registerCustomer Aubin Ollivier aubin 5,7 domino
+registerCourier Max Verstappen mv 4,8 redbull
+registerCourier Lewis Hamilton lh 50,60 mercedes
+setDeliveryPolicy fastest
+logout
+login tourdargent rourteau
+createMeal Renommées standard
+addDishRestaurantMenu Foie_gras_des_trois_empereurs starter standard 135
+addDishRestaurantMenu Caneton_Frédéric_Delair main standard 185
+addDishRestaurantMenu Crêpe_Mademoiselle dessert standard 58
+addDish2Meal Foie_gras_des_trois_empereurs Renommées
+addDish2Meal Caneton_Frédéric_Delair Renommées
+addDish2Meal Crêpe_Mademoiselle Renommées
+saveMeal Renommées
+showMeal Renommées
+createMeal Temps_et_saisons vegetarian
+addDishRestaurantMenu Asperges_vertes_et_blanches starter vegetarian 86
+addDishRestaurantMenu Gnocchis_au_comté main vegetarian 116
+addDishRestaurantMenu Soufflé_Valtesse dessert vegetarian 42
+addDish2Meal Asperges_vertes_et_blanches Temps_et_saisons
+addDish2Meal Gnocchis_au_comté Temps_et_saisons
+addDish2Meal Soufflé_Valtesse Temps_et_saisons
+saveMeal Temps_et_saisons
+showMeal Temps_et_saisons
+specialFactorDiscount 0.20
+defaultFactorDiscount 0.05
+setSpecialOffer Temps_et_saisons
+showMeal Renommées
+showMeal Temps_et_saisons
+showMenuItem Tour_d'Argent
+logout
+login aubin domino
+notifOn
+createOrder Tour_d'Argent commande
+addItem2Order commande Foie_gras_des_trois_empereurs
+addItem2Order commande Temps_et_saisons
+showOrder commande
+endOrder commande 2024-06-09
+logout
+login ceo 123
+showRestaurantTop
+logout
+login tourdargent rourteau
+findDeliverer commande
+logout
+login ceo 123
+showCustomers
+associateCard aubin point
+showCourierDeliveries
+showTotalProfit
+logout
+login aubin domino
+notifOn
+createOrder Tour_d'Argent commande2
+addItem2Order commande2 Foie_gras_des_trois_empereurs
+addItem2Order commande2 Temps_et_saisons
+showOrder commande2
+endOrder commande2 2024-06-09
+logout
+login mv redbull
+offDuty mv
+logout
+login tourdargent rourteau
+findDeliverer commande
+logout
+
